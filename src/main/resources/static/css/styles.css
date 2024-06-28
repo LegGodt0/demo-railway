@@ -1,0 +1,88 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+	width: 970px;
+}
+
+header {
+	margin-top: 20px;
+	font-size: 20px;
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: 200px 1fr 200px;
+	justify-content: flex-end;
+}
+
+header form {
+	grid-column: 3;
+}
+
+.amount {
+	border: 1px solid black;
+	padding: 0 15px;
+	text-align: left;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	column-gap: 20px;
+}
+
+section {
+	border: 1px solid black;
+	text-align: center;
+	width: 100%;
+	padding: 15px 0px;
+}
+
+section p {
+	margin: 15px 0px 25px;
+	font-size: 17px;
+}
+
+section form input, 
+header form input {
+	padding: 5px;
+	font-weight: bold;
+	box-shadow: 2px 2px black;
+}
+
+.activities {
+	margin-top: 20px;
+	grid-column: -1/1;
+	width: 100%;
+}
+
+.activities h3 {
+	font-size: 25px;
+}
+
+.caja {
+	margin-top: 20px;
+	border: 2px solid black;
+	height: 160px;
+	padding: 5px;
+	overflow-y: auto;
+	display: grid;
+	transform: scaleY(-1);
+	align-items: flex-start;
+}
+
+.contenido {
+	list-style: none;
+  	display: flex;
+  	flex-direction: column-reverse;
+  	margin-left: 0;
+}
+
+.contenido li {
+	transform: scaleY(-1);
+	margin-left: 0;
+	
+}
